@@ -1,4 +1,4 @@
-#!/home/kazimieras/Desktop/Hack/Backend/env/bin/python
+#!/home/kazimieras/Desktop/Hack/temp/team-10/env/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'setuptools==18.5','console_scripts','easy_install'
 __requires__ = 'setuptools==18.5'
 import sys
