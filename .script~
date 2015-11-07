@@ -1,0 +1,4 @@
+#!/bin/bash
+echo 'source /env/bin/activate'
+echo 'pip install -r /project/requirements.txt -U'
+echo 'python /project/manage.py migrate'

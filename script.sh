@@ -1,0 +1,4 @@
+#!/bin/bash
+source env/bin/activate
+pip install -r project/requirements.txt -U
+python project/manage.py migrate
