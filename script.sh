@@ -1,4 +1,5 @@
 #!/bin/bash
+virtualenv env
 source env/bin/activate
-pip install -r project/requirements.txt -U
-python project/manage.py migrate
+pip install -r requirements.txt -U
+
