@@ -1,40 +1,35 @@
 $(document).ready(function() {
 
-		var array = new Array();
-		
-		var i = 0;
-		for (i; i<10; i++) {
-			array[i] = 0; 
-		}	
+		var map = new Map();
+	
+		$( ".inline" ).each( 
+		function(){
+		map.put( $(this).id , 0 );
+			
+			function () {
+				$(this).click(fun);
+		});
+					    
 
-		//console.log(id + " ");
-		
-		
-		$( ".inline" ).each( function () {
+		function fun(event) {
 
-		$(this).click( function() {
-			var idNo = (this).id;
-				    
-
-			 if (!array[idNo])  {
-				 $(this).fadeTo("fast", 1.0);
-				 array[idNo] = 1;
+			  
+			  	var itsId = $(event.toElement).id;	  
+			  
+			  if (  !map.value( itsId)  )  {
+				 $(event.toElement).fadeTo("fast", 1.0);
+				 map.put( itsId, 1);
 			 }
 			 
 			 else 			    {
-				 $(this).fadeTo("fast", 0.3);
-				 array[idNo] = 0;
+				 $(event.toElement).fadeTo("fast", 0.3);
+				 map.put(itsId, 0);
 			 }
 			 
-			 
-			
-		});
-		
-		});
-					    
-			    
-
-		
+		};
 		
 
 });
+
+
+
