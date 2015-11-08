@@ -1,9 +1,17 @@
+
+.container {
+  width = 100%;
+  position: center;
+}
+
 .inline {
 height:			300px;
 width:			300px;
+border-radius: 300px;
 display: 		inline-block;
 font-weight: 	bold;
-
+padding: 10px;
+margin: 15px;
 font-size:		2em;
 text-align:		center;    
 opacity:		0.3;     
@@ -22,13 +30,10 @@ div > p {
   background-image: linear-gradient(to bottom, #3498db, #2980b9);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Courier New;
   color: #ffffff;
   font-size: 36px;
   padding: 10px 20px 10px 20px;
-  text-decoration: none;
-
+  margin-top: 50px;
 }
 
 .btn:hover {
@@ -38,8 +43,6 @@ div > p {
   background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
-
 }
 
 
@@ -92,3 +95,6 @@ div > p {
 	background-color:	#A1D490;
 }
 
+.removeedge {
+  border-radius: 10%;
+}
