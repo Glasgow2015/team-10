@@ -1,0 +1,75 @@
+<!-- JS -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/volunteerForm.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+
+<!-- Custom Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+<!-- Plugin CSS -->
+<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/creative.css" type="text/css">
+<link href="css/full-slider.css" rel="stylesheet" type="text/css">
+
+<div class="container">
+    <div class="row">
+        <div class="form-box">
+            <h1>Volunteer <span>form</span></h1>
+            <form role="form" action="http://127.0.0.1:8000/volunteers/register/" method="post" id="volunteer-form">
+                <!-- First name field -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                        <input name="first_name" type="text" class="form-control" id="form-first-name-field" value="" placeholder="First name">
+                        <input name="last_name" type="text" class="form-control" id="form-last-name-field" value="" placeholder="Last name">
+                    </div>
+                </div>
+                <!-- email field -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                        <input name="email" type="email" class="form-control" id="form-email-field" value="" placeholder="Email">
+                    </div>
+                </div>
+                <!-- dob calendar -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                        <input name="date_of_birth" type="text" class="form-control" id="form-dob-calendar-field" value="">
+                    </div>
+                </div>
+                <!-- City field -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-home"></span></div>
+                        <input name="city" type="text" class="form-control" id="form-city-field" value="" placeholder="City">
+                    </div>
+                </div>
+                <!-- phone field -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                        <input name="phone_number" type="phone" class="form-control" id="form-phone-field" value="" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="subscribed_to_newsletter" type="checkbox"> Subscribe to our newsletter
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

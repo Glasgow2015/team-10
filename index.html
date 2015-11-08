@@ -8,9 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="keywords" content="jquery, slide out,accordion, css3, fadeout, fadein, elegant, fancy, box shadow"/>
 
     <title>Pancreatic Cancer Scotland | Welcome</title>
-
+    <!-- JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/volunteerForm.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
@@ -35,6 +43,36 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+     <style>
+            #content{
+                margin:0 auto;
+            }
+            .reference{
+                clear:both;
+                top:300px;
+                left:0px;
+                position:absolute;
+                text-align:right;
+                width:400px;
+                padding:20px;
+                background-color:#fff;
+                -moz-box-shadow:1px 3px 15px #ddd;
+                -webkit-box-shadow:1px 3px 15px #ddd;
+                box-shadow:1px 3px 15px #ddd;
+            }
+            .reference p a{
+                text-transform:uppercase;
+                text-shadow:1px 1px 1px #fff;
+                color:#666;
+                text-decoration:none;
+                font-size:10px;
+            }
+            .reference p a:hover{
+                color:#333;
+            }
+        </style>
 </head>
 
 <body id="page-top">
@@ -155,31 +193,52 @@
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <div class="container">
-                            <div class="row">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <img src="https://www.mariecurie.org.uk/globalassets/media/images/get-involved/volunteer/volunteering-01.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Volunteer
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Enjoy helping out? Sign up here!
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://www.mariecurie.org.uk/globalassets/media/images/get-involved/blooming-great-tea-party/bunting.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Events
+                                </div>
+                                <div class="project-name">
+                                    Check regularly for upcoming events!
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box" style="width: auto">
+                        <img src="http://www.videoskick.com/wp-content/uploads/2015/09/s.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption" >
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Information
+                                </div>
+                                <div class="project-name">
+                                    In-depth information about the condition.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>              
             </div>
         </div>
     </section>
-
 
     <section class="bg-dark" id="services">
         <div class="container">
@@ -191,10 +250,11 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row" align="center">
+                <p></p>
                 <a class="twitter-timeline"  href="https://twitter.com/pancreaticcansc" data-widget-id="663118446805319680">Tweets by @pancreaticcansc</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            <div class="fb-page" align="right" data-href="https://www.facebook.com/Pancreatic-Cancer-Scotland-306220162741768/" data-width="500" data-height="250" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/Pancreatic-Cancer-Scotland-306220162741768/" data-width="500px" data-hide-cover="false" data-show-facepile="true" data-show-posts="true" data-height="450px"></div>
     </section>
 
     <section id="contact">
