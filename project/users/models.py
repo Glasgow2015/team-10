@@ -45,3 +45,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField(auto_now_add=True)
     USERNAME_FIELD = 'email'
     objects = UserManager()
+
+    def get_full_name(self):
+        return self.email
+
+    def get_short_name(self):
+        return self.email[:self.email.find('@')]
