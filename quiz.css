@@ -1,0 +1,54 @@
+.inline {
+height:			300px;
+width:			300px;
+display: 		inline-block;
+
+padding: 		30px;
+
+font-size:		2em;
+text-align:		center;         
+}
+
+#zeroth {
+	background-color:	#00FFCC;
+	onclick:			myFunction(zeroth);
+}
+
+#one {
+	background-color:	#FF3300;
+}
+
+#two {
+	background-color:	#00CC00;
+}
+
+#three {
+	background-color:	#0066FF;
+}
+
+#four {
+	background-color:	#9900CC;
+}
+
+#five {
+	background-color:	#FFFF00;
+}
+
+#six {
+	background-color:	#6600CC;
+}
+
+#seven {
+	background-color:	#FFCC99;
+}
+
+#eight {
+	background-color:	#996633;
+}
+
+#nine {
+	background-color:	#0066CC;
+}
+
+
+
