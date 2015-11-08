@@ -527,3 +527,7 @@ body {
 .widget {
     width: 80%;
 }
+
+.changecol {
+    background-color: #FF6633;
+}
