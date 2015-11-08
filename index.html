@@ -186,73 +186,57 @@
         </div>
     </section>
 
-    <section style="height: 150px">
-            <ul class="accordion" id="accordion">
-            <li class="bg1">
-                <div class="heading">Calendar</div>
-                <div class="bgDescription"></div>
-                <div class="description">
-                    <h2>News and Events</h2>
-                    <p>Check here regularly for the latest news and events!</p>
-                    <a href="#">more &rarr;</a>
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://www.mariecurie.org.uk/globalassets/media/images/get-involved/volunteer/volunteering-01.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Volunteer
+                                </div>
+                                <div class="project-name">
+                                    Enjoy helping out? Sign up here!
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </li>
-            <li class="bg2">
-                <div class="heading">Volunteer</div>
-                <div class="bgDescription"></div>
-                <div class="description">
-                    <h2>Volunteering</h2>
-                    <p>Like to help out and be a source of support? Sign up here!</p>
-                    <a href="#">more &rarr;</a>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://www.mariecurie.org.uk/globalassets/media/images/get-involved/blooming-great-tea-party/bunting.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Events
+                                </div>
+                                <div class="project-name">
+                                    Check regularly for upcoming events!
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-
-            </li>
-            <li class="bg3">
-                <div class="heading">Symptoms</div>
-                <div class="bgDescription"></div>
-                <div class="description">
-                    <h2>Symptoms</h2>
-                    <p>Take this test for total peace of mind!</p>
-                    <a href="#">more &rarr;</a>
-                </div>
-
-            </li>
-            <li class="bg4 bleft">
-                <div class="heading">Info</div>
-                <div class="bgDescription"></div>
-                <div class="description">
-                    <h2>Information</h2>
-                    <p>Click here for infographics and in-depth information about the condition.</p>
-                    <a href="#">more &rarr;</a>
-                </div>
-
-                </li>
-            </ul>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box" style="width: auto">
+                        <img src="http://www.videoskick.com/wp-content/uploads/2015/09/s.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption" >
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Information
+                                </div>
+                                <div class="project-name">
+                                    In-depth information about the condition.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>              
+            </div>
         </div>
     </section>
-
-        <!-- The JavaScript -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script type="text/javascript">
-            $(function() {
-                $('#accordion > li').hover(
-                    function () {
-                        var $this = $(this);
-                        $this.stop().animate({'width':'480px'},500);
-                        $('.heading',$this).stop(true,true).fadeOut();
-                        $('.bgDescription',$this).stop(true,true).slideDown(500);
-                        $('.description',$this).stop(true,true).fadeIn();
-                    },
-                    function () {
-                        var $this = $(this);
-                        $this.stop().animate({'width':'115px'},1000);
-                        $('.heading',$this).stop(true,true).fadeIn();
-                        $('.description',$this).stop(true,true).fadeOut(500);
-                        $('.bgDescription',$this).stop(true,true).slideUp(700);
-                    }
-                );
-            });
-        </script>
 
     <section class="bg-dark" id="services">
         <div class="container">
@@ -264,7 +248,8 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row" align="center">
+                <p></p>
                 <a class="twitter-timeline"  href="https://twitter.com/pancreaticcansc" data-widget-id="663118446805319680">Tweets by @pancreaticcansc</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             <div class="fb-page" data-href="https://www.facebook.com/Pancreatic-Cancer-Scotland-306220162741768/" data-width="500px" data-hide-cover="false" data-show-facepile="true" data-show-posts="true" data-height="450px"></div>
