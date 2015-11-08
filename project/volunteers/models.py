@@ -3,7 +3,6 @@ from django.conf import settings
 
 
 class Volunteer(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     date_of_birth = models.DateField()
