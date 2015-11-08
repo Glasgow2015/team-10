@@ -6,3 +6,8 @@ $(function() {
         showDropdowns: true
     });
 });
+
+
+$( "volunteer-form" ).submit(function() {
+
+});

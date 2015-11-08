@@ -1,6 +1,8 @@
 <!-- JS -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/jquery.easing.min.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/daterangepicker.js"></script>
 <script src="js/volunteerForm.js"></script>
@@ -20,61 +22,50 @@
 <link rel="stylesheet" href="css/creative.css" type="text/css">
 <link href="css/full-slider.css" rel="stylesheet" type="text/css">
 
-<script>
-    $(function() {
-        $('input[id="form-dob-calendar-field"]').
-        daterangepicker({
-            startDate: new moment(),
-            singleDatePicker: true,
-            showDropdowns: true
-        });
-    });
-</script>
-
 <div class="container">
     <div class="row">
         <div class="form-box">
             <h1>Volunteer <span>form</span></h1>
-            <form role="form" id="contact-form">
+            <form role="form" action="http://127.0.0.1:8000/volunteers/register/" method="post" id="volunteer-form">
                 <!-- First name field -->
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-                        <input type="text" class="form-control" id="form-first-name-field" value="" placeholder="First name">
-                        <input type="text" class="form-control" id="form-last-name-field" value="" placeholder="Last name">
+                        <input name="first_name" type="text" class="form-control" id="form-first-name-field" value="" placeholder="First name">
+                        <input name="last_name" type="text" class="form-control" id="form-last-name-field" value="" placeholder="Last name">
                     </div>
                 </div>
                 <!-- email field -->
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
-                        <input type="email" class="form-control" id="form-email-field" value="" placeholder="Email">
+                        <input name="email" type="email" class="form-control" id="form-email-field" value="" placeholder="Email">
                     </div>
                 </div>
                 <!-- dob calendar -->
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                        <input type="text" class="form-control" id="form-dob-calendar-field" name="birthdate" value="" />
+                        <input name="date_of_birth" type="text" class="form-control" id="form-dob-calendar-field" value="">
                     </div>
                 </div>
                 <!-- City field -->
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-home"></span></div>
-                        <input type="text" class="form-control" id="form-city-field" value="" placeholder="City">
+                        <input name="city" type="text" class="form-control" id="form-city-field" value="" placeholder="City">
                     </div>
                 </div>
                 <!-- phone field -->
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
-                        <input type="phone" class="form-control" id="form-phone-field" value="" placeholder="Phone">
+                        <input name="phone_number" type="phone" class="form-control" id="form-phone-field" value="" placeholder="Phone">
                     </div>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> Subscribe to our newsletter
+                        <input name="subscribed_to_newsletter" type="checkbox"> Subscribe to our newsletter
                     </label>
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
