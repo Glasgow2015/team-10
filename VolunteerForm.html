@@ -1,26 +1,51 @@
-<div class="container" style="background-color: lightblue">
+<!-- JS -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/volunteerForm.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+
+<!-- Custom Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+<!-- Plugin CSS -->
+<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/creative.css" type="text/css">
+<link href="css/full-slider.css" rel="stylesheet" type="text/css">
+
+<script>
+    $(function() {
+        $('input[id="form-dob-calendar-field"]').
+        daterangepicker({
+            startDate: new moment(),
+            singleDatePicker: true,
+            showDropdowns: true
+        });
+    });
+</script>
+
+<div class="container">
     <div class="row">
         <div class="form-box">
             <h1>Volunteer <span>form</span></h1>
             <form role="form" id="contact-form">
                 <!-- First name field -->
                 <div class="form-group">
-                    <label for="form-name-field" class="sr-only">First name</label>
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
                         <input type="text" class="form-control" id="form-first-name-field" value="" placeholder="First name">
-                    </div>
-                </div>
-                <!-- Last name field -->
-                <div class="form-group">
-                    <label for="form-name-field" class="sr-only">Last name</label>
-                    <div class="input-group">
                         <input type="text" class="form-control" id="form-last-name-field" value="" placeholder="Last name">
                     </div>
                 </div>
                 <!-- email field -->
                 <div class="form-group">
-                    <label for="form-email-field" class="sr-only">Email</label>
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
                         <input type="email" class="form-control" id="form-email-field" value="" placeholder="Email">
@@ -28,23 +53,20 @@
                 </div>
                 <!-- dob calendar -->
                 <div class="form-group">
-                    <label for="form-name-field" class="sr-only">Date of birth</label>
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                        <input type="text" id="form-dob-calendar-field" name="birthdate" value="" />
+                        <input type="text" class="form-control" id="form-dob-calendar-field" name="birthdate" value="" />
                     </div>
                 </div>
                 <!-- City field -->
                 <div class="form-group">
-                    <label for="form-name-field" class="sr-only">City</label>
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-home"></span></div>
-                        <input type="text" class="form-control" id="form-first-name-field" value="" placeholder="City">
+                        <input type="text" class="form-control" id="form-city-field" value="" placeholder="City">
                     </div>
                 </div>
                 <!-- phone field -->
                 <div class="form-group">
-                    <label for="form-phone-field" class="sr-only">Phone</label>
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
                         <input type="phone" class="form-control" id="form-phone-field" value="" placeholder="Phone">
