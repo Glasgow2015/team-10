@@ -581,15 +581,15 @@ section p {
 }
 
 section.color h2 {
-    color: #fff;
+    color: #000;
 }
 
 section.color p {
-    color: #fff;
+    color: #000;
 }
 
 .color {
-    background: #000;
+    background: #72587F;
 }
 
 /*** Individual section styles and separators ***/
@@ -681,8 +681,8 @@ svg#bigTriangleColor {
 }
 
 #bigTriangleColor path {
-    fill: #000;
-    stroke: #000;
+    fill: #fff;
+    stroke: #fff;
     stroke-width: 2;
 }
 
@@ -1011,3 +1011,30 @@ svg#bigTriangleColor {
     -webkit-transform: translateX(-50%) rotate(-45deg);
     transform: translateX(-50%) rotate(-45deg);
 }
+
+  #map {
+        height: 100%;
+      }
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+      #floating-panel {
+        background-color: #fff;
+        border: 1px solid #999;
+        left: 25%;
+        padding: 5px;
+        position: absolute;
+        top: 10px;
+        z-index: 5;
+      }
